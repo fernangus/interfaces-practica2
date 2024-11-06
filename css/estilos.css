@@ -1,0 +1,128 @@
+/* Propiedades */
+
+:root{
+    --cnegro: #000000;
+    --cblanco: #FFFFFF;
+    --caqua: #6BDEC8;
+    --cladrillo: #942C0B;
+}
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye padding y bordes en el tamaño total */
+    list-style: none;
+}
+
+html{
+    font-size: 16px;
+}
+
+/* Generales */
+
+body {
+    line-height: 1.6; /* Mejora la legibilidad */
+    font-family: "Work Sans", serif;
+}
+
+.cuerpo--index{
+    display: flex;
+    flex-direction: column; /* Ordena los elementos verticalmente */
+    height: 100vh; /* Asegura que ocupe toda la altura del viewport */
+    background-image: url("/img/home-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--cblanco);
+}
+
+.cuerpo a{
+    text-decoration: none;
+    color: var(--cblanco);
+}
+
+.cabecera__menu{
+    text-transform: uppercase;
+}
+
+.cabecera__menu a:hover{
+    color: var(--caqua);
+}
+
+.cuerpo--index .cabecera__menu{
+    font-size: 1.3rem;    
+}
+
+.contenido__titulo{
+    font-size: 3rem;
+    letter-spacing: -0.2rem;
+}
+
+ .contenido__titulo{
+    font-size: 10rem;
+    letter-spacing: -0.8rem;
+}
+
+.cuerpo--index .contenido__subtitulo{
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+}
+
+
+
+.cabecera__lista{
+    display: flex;
+    justify-content: center;
+}
+
+.cabecera__lista a{
+    margin: 0 15px;
+}
+
+.piedepagina a:hover{
+    color: var(--caqua);
+}
+
+.piedepagina__lista{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.piedepagina__lista a{
+    margin: 0 15px;
+}
+
+
+.cuerpo--index .cabecera {
+    flex-grow: 0;       /* El header no crecerá */
+    flex-shrink: 0;     /* El header no se reducirá */
+    flex-basis: auto;   /* El tamaño del header se ajusta a su contenido */
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.cuerpo--index .contenido {
+    flex-grow: 1;       /* El contenido ocupa el espacio restante */
+    flex-shrink: 1;     /* El contenido puede reducirse si es necesario */
+    flex-basis: 0;      /* El tamaño inicial del contenido será 0, lo que significa que se ajustará al espacio disponible */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuerpo--index .contenido > * { /* Elementos hijos de .cuerpo--index .contenido */
+    margin: -2rem; 
+}
+
+.cuerpo--index .piedepagina {
+    flex-grow: 0;       /* El pie de página no crecerá */
+    flex-shrink: 0;     /* El pie de página no se reducirá */
+    flex-basis: auto;   /* El tamaño del pie de página se ajusta a su contenido */
+    text-align: center;
+    margin-bottom: 20px;
+}

@@ -27,18 +27,41 @@ body {
     font-family: "Work Sans", serif;
 }
 
-.cuerpo--index{
-    display: flex;
-    flex-direction: column; /* Ordena los elementos verticalmente */
-    height: 100vh; /* Asegura que ocupe toda la altura del viewport */
-    background-image: url("/img/home-hero.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+h1{
+    font-size: 3rem;
+    letter-spacing: -0.2rem;
+}
+
+h2{
+    font-size: 2.5rem;    
+}
+
+h3{
+    font-size: 2rem;
+    display:block;
+    border-bottom: 1px solid var(--cnegro);
+}
+
+
+
+.cabecera{
+    background-color: var(--cnegro);
+    color: var(--cblanco);
+    height: 180px;
+}
+
+.cabecera a{
+    text-decoration: none;
     color: var(--cblanco);
 }
 
-.cuerpo a{
+.piedepagina{
+    background-color: var(--cnegro);
+    color: var(--cblanco);
+    height: 180px;
+}
+
+.piedepagina a{
     text-decoration: none;
     color: var(--cblanco);
 }
@@ -51,34 +74,43 @@ body {
     color: var(--caqua);
 }
 
-.cuerpo--index .cabecera__menu{
-    font-size: 1.3rem;    
+.cabecera__logoytitulo{
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }
 
-.contenido__titulo{
-    font-size: 3rem;
-    letter-spacing: -0.2rem;
+.cabecera__logo{
+    margin-right: 10px;
+    width: 30px;
+    height: auto;
+
 }
 
- .contenido__titulo{
-    font-size: 10rem;
-    letter-spacing: -0.8rem;
+.cabecera__menu__activo{
+    border-bottom: var(--cblanco);
 }
 
-.cuerpo--index .contenido__subtitulo{
-    font-size: 2.5rem;
-    letter-spacing: 0.3rem;
+
+
+.contenido{
+    max-width: 1160px;
+    margin: 50px auto;
 }
 
 
 
 .cabecera__lista{
     display: flex;
-    justify-content: center;
+    justify-content:center;
 }
 
 .cabecera__lista a{
     margin: 0 15px;
+}
+
+.cabecera__lista__activa{
+    border-bottom: #000000;
 }
 
 .piedepagina a:hover{
@@ -88,11 +120,52 @@ body {
 .piedepagina__lista{
     display: flex;
     margin-bottom: 20px;
-    justify-content: center;
+    justify-content:left;
 }
 
 .piedepagina__lista a{
     margin: 0 15px;
+}
+
+
+
+
+
+
+.cuerpo--index .piedepagina__lista{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.cuerpo--index{
+    display: flex;
+    flex-direction: column; /* Ordena los elementos verticalmente */
+    height: 100vh; /* Asegura que ocupe toda la altura del viewport */
+    background-image: url("/img/home-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--cblanco);
+}
+
+.cuerpo--index a{
+    text-decoration: none;
+    color: var(--cblanco);
+}
+
+.cuerpo--index .cabecera__menu{
+    font-size: 1.3rem;    
+}
+
+.cuerpo--index h1{
+    font-size: 10rem;
+    letter-spacing: -0.8rem;
+}
+
+.cuerpo--index h2{
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
 }
 
 
@@ -102,8 +175,14 @@ body {
     flex-basis: auto;   /* El tamaño del header se ajusta a su contenido */
     text-align: center;
     margin-top: 20px;
+    background-color: transparent;
+    height: auto;
 }
 
+.cuerpo--index .cabecera__lista{
+    display: flex;
+    justify-content: center;
+}
 
 .cuerpo--index .contenido {
     flex-grow: 1;       /* El contenido ocupa el espacio restante */
@@ -125,4 +204,6 @@ body {
     flex-basis: auto;   /* El tamaño del pie de página se ajusta a su contenido */
     text-align: center;
     margin-bottom: 20px;
+    background-color: transparent;
+    height: auto;
 }

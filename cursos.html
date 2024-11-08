@@ -3,9 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inicio - el taller</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+<meta name="description" content="el taller es un espacio dedicado a la enseñanza y práctica de la cerámica.">
 </head>
-<body>
-    
+<body class="cuerpo">
+    <header class="cabecera">
+        <div class="cabecera__logoytitulo">
+            <a href="index.html"><img alt="Logo el taller" src="img/isologo-taller.png" class="cabecera__logo"></a>
+            <h1 class="cabecera__titulo"><a href="index.html">el taller</a></h1>
+        </div>
+        <nav class="cabecera__menu">
+            <ul class="cabecera__lista">
+                <li><a href="que-es-la-ceramica.html" title="¿Qué es la cerámica?">Cerámica</a></li>
+                <li><a href="cursos.html" title="Cursos" class="cabecera__menu__activo">Cursos</a></li>
+                <li><a href="inscripcion-cursos.html" title="Inscripción a cursos">Inscripción</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenido">
+        
+        <section>
+        <header>
+        <h2 class="contenido__titulo">Cursos de cerámica <span class="contenido__titulo--fecha">2023</span></h2>
+        
+        
+        <figure class="contenido__imagen">
+            <img src="/img/cursos-ceramica.jpg" >
+            <figcaption class="subtitulofigura contenido__imagen--subtitulo">&copy de <a href="https://unsplash.com/@courtneymcook">Courtney Cook</a> en <a href="https://unsplash.com/es/fotos/jZLozXwxgbo]">Unsplash</a></figcaption>            
+        </figure>
+
+        
+        </header>
+
+        <p class="contenido__intro">Cursos de cerámica para todos los niveles. Artesanos expertos te guiarán para que aprendas el oficio y des rienda suelta
+            a tu creatividad.</p>
+        
+        <table class="contenido__tabla">
+            <caption>Programación de cursos</caption>
+            <thead>
+                <tr>
+                    <th>Cursos</th>
+                    <th>Precio</th>
+                    <th>Duración</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Torno</td>
+                    <td>150 €</td>
+                    <td>4 horas</td>
+                    <td>Un sábado al mes de 10 a 14 h</td>                    
+                </tr>
+                <tr>
+                    <td>Cerámica</td>
+                    <td>100 €</td>
+                    <td>4 horas</td>
+                    <td>Jueves alternos de 19 a 21 h</td>                    
+                </tr>
+                <tr>
+                    <td>Modelado</td>
+                    <td>200 €</td>
+                    <td>12 horas</td>
+                    <td>Un miércoles al mes de 18 a 21 h</td>                    
+                </tr>
+                <tr>
+                    <td>Esmaltes</td>
+                    <td>250 €</td>
+                    <td>16 horas</td>
+                    <td>Martes y jueves de 19 a 21 h</td>                    
+                </tr>
+                <tr>
+                    <td>Joyería cerámica</td>
+                    <td>160 €</td>
+                    <td>4 horas</td>
+                    <td>Un viernes al mes de 16 a 20 h</td>                    
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Plazas limitadas a 15 alumnos por sesión</td>
+                </tr>
+            </tfoot>
+        </table>
+        </section>  
+        
+
+
+
+    </main>
+    <footer class="piedepagina">
+        <div class="piedepagina__contenedor">
+        <nav class="piedepagina__menu">
+            <ul class="piedepagina__lista">
+                <li><a href="#" title="Aviso legal">Aviso legal</a></li>
+                <li><a href="#" title="Política de privacidad">Política de privacidad</a></li>
+                <li><a href="#" title="Política de cookies">Política de cookies</a></li>
+            </ul>
+        </nav>
+        <p class="piedepagina__autor">2023 &copy; Gustavo Martín Fernández D'Amore</p>
+        </div>
+    </footer>
 </body>
 </html>

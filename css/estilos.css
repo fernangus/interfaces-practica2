@@ -1,5 +1,4 @@
-/* Propiedades */
-
+/* Variables */
 :root{
     --cnegro: #000000;
     --cblanco: #FFFFFF;
@@ -20,7 +19,11 @@ html{
     font-size: 16px;
 }
 
-/* Generales */
+a{
+    text-decoration: none;
+}
+
+/* Tipografía y elementos globales */
 
 body {
     line-height: 1.6; /* Mejora la legibilidad */
@@ -42,7 +45,7 @@ h3{
     border-bottom: 1px solid var(--cnegro);
 }
 
-
+/* Cabecera */
 
 .cabecera{
     background-color: var(--cnegro);
@@ -53,28 +56,6 @@ h3{
 .cabecera a{
     text-decoration: none;
     color: var(--cblanco);
-}
-
-.piedepagina{
-    background-color: var(--cnegro);
-    color: var(--cblanco);
-    height: 140px;
-}
-
-.piedepagina__contenedor{
-    max-width: 1140px;
-    margin: auto;
-    padding-top: 10px;
-    font-size: 1.1rem;
-}
-
-.piedepagina a{
-    text-decoration: none;
-    color: var(--cblanco);
-}
-
-.piedepagina__autor{
-    font-size: 0.8rem;
 }
 
 .cabecera__menu{
@@ -104,6 +85,20 @@ h3{
 
 }
 
+.cabecera__lista{
+    display: flex;
+    justify-content:center;
+}
+
+.cabecera__lista a{
+    margin: 0 15px;
+}
+
+.cabecera__lista__activa{
+    border-bottom: #000000;
+}
+
+/* Cuerpo principal */
 
 .contenido{
     max-width: 1140px;
@@ -128,32 +123,124 @@ h3{
     border: none; /* frameborder es obsoleto en HTML5 */
 }
 
-.subtitulofigura{
-    font-size: 0.8rem;
-    padding-top: 8px;
-}
-
 .contenido__youtube--subtitulo{
     width: 100%;
     max-width: 832px; /* Limita el ancho del texto al mismo tamaño que el iframe */
     text-align: left;    
 }
 
+.contenido a{
+    color: var(--cladrillo);
+    border-bottom: 1px dotted var(--cladrillo);
+}
+
+.contenido a:hover{
+    border-bottom: 1px solid;
+}
+
+.contenido__titulo--fecha{
+
+}
+
+.contenido__imagen{
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0 40px;
+}
+
+.contenido__imagen img{
+    width: 832px;
+    height: auto;
+}
+
+.contenido__imagen--subtitulo{
+    width: 100%;
+    max-width: 832px; /* Limita el ancho del texto al mismo tamaño que el iframe */
+    text-align: left;
+}
+
+.contenido__intro{        
+    margin: 0 auto 18px;
+    max-width: 832px; /* Limita el ancho del texto al mismo tamaño que el iframe */    
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.contenido__tabla{
+    border: solid 1px var(--cnegro);
+}
+
+.contenido__tabla td{
+    border: solid 1px var(--cnegro);
+}
+
+/* Artículo */
+
 .articulo__parrafo{
     margin-bottom: 18px;
 }
 
-.cabecera__lista{
-    display: flex;
-    justify-content:center;
+.articulo__lista li{
+    list-style-type: square;
+    margin-left: 60px;
+    
 }
 
-.cabecera__lista a{
-    margin: 0 15px;
+.articulo__lista li{
+    margin-bottom: 8px;
+}
+.articulo__lista li:last-child{
+    margin-bottom: 18px;
 }
 
-.cabecera__lista__activa{
-    border-bottom: #000000;
+.articulo__listadefiniciones{
+    margin-left: 60px;
+}
+
+.articulo__listadefiniciones dt{
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.articulo__listadefiniciones dd{
+    margin-left: 40px;
+    margin-bottom: 18px;
+}
+
+.articulo__pie{
+    font-size: 0.9rem;
+}
+
+/* Subtítulos de figuras */
+
+.subtitulofigura{
+    font-size: 0.8rem;
+    padding-top: 8px;
+}
+
+/* Pie de página */
+
+.piedepagina{
+    background-color: var(--cnegro);
+    color: var(--cblanco);
+    height: 140px;
+}
+
+.piedepagina__contenedor{
+    max-width: 1140px;
+    margin: auto;
+    padding-top: 10px;
+    font-size: 1.1rem;
+}
+
+.piedepagina a{
+    text-decoration: none;
+    color: var(--cblanco);
+}
+
+.piedepagina__autor{
+    font-size: 0.8rem;
 }
 
 .piedepagina a:hover{
@@ -170,10 +257,7 @@ h3{
     margin-right: 15px;
 }
 
-
-
-
-
+/* Modificadores específicos para cuerpo--index */
 
 .cuerpo--index .piedepagina__lista{
     display: flex;
@@ -210,7 +294,6 @@ h3{
     font-size: 2.5rem;
     letter-spacing: 0.3rem;
 }
-
 
 .cuerpo--index .cabecera {
     flex-grow: 0;       /* El header no crecerá */

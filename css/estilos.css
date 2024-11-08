@@ -58,12 +58,23 @@ h3{
 .piedepagina{
     background-color: var(--cnegro);
     color: var(--cblanco);
-    height: 180px;
+    height: 140px;
+}
+
+.piedepagina__contenedor{
+    max-width: 1140px;
+    margin: auto;
+    padding-top: 10px;
+    font-size: 1.1rem;
 }
 
 .piedepagina a{
     text-decoration: none;
     color: var(--cblanco);
+}
+
+.piedepagina__autor{
+    font-size: 0.8rem;
 }
 
 .cabecera__menu{
@@ -74,10 +85,16 @@ h3{
     color: var(--caqua);
 }
 
+.cabecera__menu__activo{
+    border-bottom: 1px solid var(--cblanco);
+    padding-bottom: 10px;
+}
+
 .cabecera__logoytitulo{
     display: flex;
     justify-content:center;
     align-items: center;
+    padding-top: 50px;
 }
 
 .cabecera__logo{
@@ -87,18 +104,44 @@ h3{
 
 }
 
-.cabecera__menu__activo{
-    border-bottom: var(--cblanco);
-}
-
-
 
 .contenido{
-    max-width: 1160px;
+    max-width: 1140px;
     margin: 50px auto;
+    font-size: 1.1rem;
 }
 
+.contenido__titulo{
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+.contenido__youtube{
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0 30px;
+        
+}
+
+.contenido__youtube--iframe{
+    border: none; /* frameborder es obsoleto en HTML5 */
+}
+
+.subtitulofigura{
+    font-size: 0.8rem;
+    padding-top: 8px;
+}
+
+.contenido__youtube--subtitulo{
+    width: 100%;
+    max-width: 832px; /* Limita el ancho del texto al mismo tamaño que el iframe */
+    text-align: left;    
+}
+
+.articulo__parrafo{
+    margin-bottom: 18px;
+}
 
 .cabecera__lista{
     display: flex;
@@ -124,7 +167,7 @@ h3{
 }
 
 .piedepagina__lista a{
-    margin: 0 15px;
+    margin-right: 15px;
 }
 
 

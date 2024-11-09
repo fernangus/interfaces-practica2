@@ -45,6 +45,20 @@ h3{
     border-bottom: 1px solid var(--cnegro);
 }
 
+button{
+    border: none;
+    padding: 18px;
+    color: var(--cblanco);
+    background-color: var(--cladrillo);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin: 12px 0 12px;
+}
+
+button:hover{
+    background-color: var(--caqua);
+}
+
 /* Cabecera */
 
 .cabecera{
@@ -139,7 +153,9 @@ h3{
 }
 
 .contenido__titulo--fecha{
-
+    display: block;
+    font-size: 3.6rem;
+    margin-top: -20px;
 }
 
 .contenido__imagen{
@@ -167,12 +183,121 @@ h3{
     font-size: 2rem;
 }
 
-.contenido__tabla{
-    border: solid 1px var(--cnegro);
+/* Contenido tabla */
+
+.contenido__tabla {
+    width: 100%;
+    border-collapse: collapse; 
+    padding: 8px;
 }
 
-.contenido__tabla td{
-    border: solid 1px var(--cnegro);
+.contenido__tabla caption{
+    border-top: 1px solid var(--cnegro);
+    border-bottom: 1px solid var(--cnegro);
+
+    font-size: 1.3rem;
+}
+
+.contenido__tabla thead{
+    border-bottom: 1px solid var(--cnegro);    
+}
+
+.contenido__tabla th{
+    font-weight: normal;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.contenido__tabla th, 
+.contenido__tabla td {
+    padding: 8px;   
+}
+
+.contenido__tabla tbody td:first-child {
+    font-weight: bold;
+}
+
+.contenido__tabla tbody tr:nth-child(even) { /* Aplica un color de fondo a las filas pares */
+    background-color: var(--cblanco)
+}
+
+.contenido__tabla tbody tr:nth-child(odd) { /* Aplica un color de fondo a las filas impares */
+    background-color: var(--caqua)
+}
+
+.contenido__tabla tfoot{
+    border-bottom: 1px solid var(--cnegro);
+    font-size: 0.8rem;
+}
+
+/* Contenido formulario */
+
+.contenido--formulario{
+    max-width: 940px;
+}
+
+.formulario__campos{
+    margin-bottom: 16px;
+    padding: 33px;
+    border: 1px solid var(--cnegro);
+}
+
+.formulario__campos legend{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.formulario__grupo--doscolumnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    gap: 16px; /* Espacio entre las columnas */
+    margin-bottom: 15px;
+}
+
+.formulario__subgrupo--doscolumnas {
+    display: grid;
+    grid-template-rows: auto 1fr; /* Una fila para el label, otra para el input */
+}
+
+.formulario__subgrupo--doscolumnas label {
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.formulario__subgrupo--doscolumnas input,
+.formulario__subgrupo--doscolumnas select {
+    width: 100%;
+    padding: 18px;
+    border: 1px solid var(--cnegro);
+    font-size: 1.1rem;
+}
+
+.formulario__subgrupo {
+    display: flex; /* Los elementos se alinean horizontalmente */
+    margin-bottom: 12px;
+}
+
+.formulario__subgrupo label {
+    display: flex; /* Hace que el contenido dentro de cada label se alinee de manera horizontal */
+    align-items: center; /* Alinea verticalmente el radio y el texto */
+    margin-left: 16px;
+}
+
+.formulario__subgrupo--textarea{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__subgrupo--textarea label{
+    margin-bottom: 12px;
+}
+
+.formulario__subgrupo--textarea textarea{
+    height: 240px;
+}
+
+.formulario__notalegal{
+    margin-bottom: 12px;
 }
 
 /* Artículo */
@@ -332,4 +457,12 @@ h3{
     margin-bottom: 20px;
     background-color: transparent;
     height: auto;
+}
+
+.cuerpo--index a{
+    border: none;
+}
+
+.cuerpo--index a:hover{
+    border: none;
 }

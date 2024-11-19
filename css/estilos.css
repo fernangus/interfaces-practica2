@@ -394,7 +394,7 @@ button:hover{
     display: flex;
     flex-direction: column; /* Ordena los elementos verticalmente */
     height: 100vh; /* Asegura que ocupe toda la altura del viewport */
-    background-image: url("/img/home-hero.jpg");
+    background-image: url("img/home-hero.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
